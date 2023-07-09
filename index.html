@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính tuổi thông minh</title>
+    <script>
+        function tinhtuoi() {
+            var inputValue = document.getElementById("inputValue").value;
+            document.getElementById("output").innerText = `Tuổi của bạn là ` + inputValue ;
+            if (inputValue < 0) {
+                alert("tuổi âm cc");
+                return;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Máy tính tuổi thông minh</h2>
+    <div>
+    <label>Nhập tuổi vào đê:</label> <br/>
+    <input type="number" id="inputValue">
+    <button onclick="tinhtuoi()">tính tuổi</button>
+    <p id="output"></p>
+  </div>
+</body>
+<style>
+  h2 {
+    color : red;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  div {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+</html>
